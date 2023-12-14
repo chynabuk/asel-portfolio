@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="./scripts/modal.js"></script>
+  <script defer src="./scripts/gallery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="./scripts/wow.min.js"></script>
+</head>
+
+<body>
+  <header class="container">
+    <div class="header">
+      <a href="./index.html"><img class="logo" src="./images/logo.svg" alt="logo"></a>
+      <img class="menu-icon" src="../images/menu.svg" alt="menu">
+    </div>
+  </header>
+
+  <!-- модалка -->
+  <div class="modal wow animate__animated animate__fadeInUp" id="myModal">
+    <div class="modal-content">
+      <a href="./index.html">Main</a>
+      <a href="./about.html">About me</a>
+      <a href="./gallery.html">Gallery</a>
+      <span class="close" id="closeModal">&times;</span>
+    </div>
+  </div>
+
+  <main class="container">
+    <section id="sec1" class="sec1">
+      <h1 class="sec1 wow animate__animated animate__fadeInUp">MY ACHIEVEMENTS IN IT</h1>
+      <p class="text1 wow animate__animated animate__fadeInUp">HERE I WILL POST MY CERTIFICATES AS ACHIEVEMENTS IN IT,
+        BUT UNFORTUNATELY I HAVE POSTED WHAT I FOUND AT HOME</p>
+
+      <!-- слайдер -->
+      <div class="swiper-container wow animate__animated animate__fadeInUp">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="car2" src="./images/gallery-1.jpg" alt="picture-1"></div>
+          <div class="swiper-slide"><img class="car2" src="./images/gallery-2.jpg" alt="picture-2"></div>
+          <!-- Добавьте нужное количество слайдов -->
+        </div>
+        <!-- пагинация (индикаторы слайдов) -->
+        <div class="swiper-pagination"></div>
+        <!-- стрелки "вперед" и "назад" -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

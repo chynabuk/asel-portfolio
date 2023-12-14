@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>python-w</title>
+  <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="./scripts/modal.js"></script>
+  <script defer src="./scripts/gallery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="./scripts/wow.min.js"></script>
+</head>
+<body>
+<header class="container">
+  <div class="header">
+    <a href="./index.html"><img class="logo" src="./images/logo.svg" alt="logo"></a>
+    <img class="menu-icon" src="../images/menu.svg" alt="menu">
+  </div>
+</header>
+
+<!-- модалка -->
+<div class="modal wow animate__animated animate__fadeInUp" id="myModal">
+  <div class="modal-content">
+    <a href="./index.html">Main</a>
+    <a href="./about.html">About me</a>
+    <a href="./gallery.html">Gallery</a>
+    <span class="close" id="closeModal">&times;</span>
+  </div>
+</div>
+<main class="container">
+  <section id="sec1" class="sec1">
+    <h1 class="sec1 wow animate__animated animate__fadeInUp">COURSEWORK IN PYTHON</h1>
+    <h2 class="sec1 wow animate__animated animate__fadeInUp">Магазин продукции APPLE</h2>
+    <p class="text1 wow animate__animated animate__fadeInUp">Requirements for the website
+      The website of the Apple online store is a website designed to demonstrate to visitors the entire range of a number of APPLE brand products. For each Apple product, the availability must be indicated (on the main page of the products in stock), price, photo and a brief description with characteristics.
+      The site should contain the following sections:
+      1. Home page
+      2. Divisions
+      3. About Us page
+      The site must contain an admin panel for the administrator, which represents the following functionality for them:
+      1.Adding new products to the catalog
+      2.Removing old products from the catalog
+      3. Viewing incoming orders
+      The site data must be permanently stored in the database. The user interface of the website should be made in accordance with the latest UI/UX principles, providing ease of use and an attractive appearance for visitors.
+    </p>
+    <!-- слайдер -->
+    <div class="swiper-container wow animate__animated animate__fadeInUp">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="car2" src="./images/apple-1.png" alt="picture-1"></div>
+        <div class="swiper-slide"><img class="car2" src="./images/apple-2.png" alt="picture-2"></div>
+        <div class="swiper-slide"><img class="car2" src="./images/apple-3.png" alt="picture-3"></div>
+        <!-- Добавьте нужное количество слайдов -->
+      </div>
+      <!-- пагинация (индикаторы слайдов) -->
+      <div class="swiper-pagination"></div>
+      <!-- стрелки "вперед" и "назад" -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+      <h1 class="sec1 wow animate__animated animate__fadeInUp">CONCLUSION</h1>
+    <p class="text2">The result of our work was the creation of a website, thanks to which all any buyer can get acquainted with our products and its full characteristics, they will also be able to quickly order the products they like.
+      Administrators will be able to add products, delete missing ones, and see the list of orders. Contact customers. Work with product categories.
+      Throughout the entire process of creating the course work, our team improved in writing code and studied a lot of useful information. Each participant contributed. We really worked as a team.
+      Our work was hard, but quite interesting. We learned how to work better in a team, and improved our coding and documentation skills.
+    </p>
+  </section>
+
+</main>
+</body>
+</html>
